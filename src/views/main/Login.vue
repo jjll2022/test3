@@ -6,11 +6,14 @@
           <v-form ref="loginform" v-model="valid">
             <v-row no-gutters justify="center" align="center" class="text-h3 font-weight-medium">
               <v-col cols="12" class="text-center">
-                <v-avatar height="200" width="200" tile
-                  >
-<!--                  <v-img src="@/assets/logo.png" height="200" width="200"/>-->
-                  <h3>placeholder for logo</h3>
-                </v-avatar>
+                <img class="mr-3"
+                     :src="require('../../assets/IvyEd-cornell-color.png')" height="400"/>
+<!--                <v-avatar height="200" width="200" tile-->
+<!--                  >-->
+<!--&lt;!&ndash;                  <
+v-img src="@/assets/logo.png" height="200" width="200"/>&ndash;&gt;-->
+<!--                  <h3>placeholder for logo</h3>-->
+<!--                </v-avatar>-->
               </v-col>
             </v-row>
 
@@ -59,7 +62,7 @@
                 <v-card color="secondbackground" elevation="0" class="px-5 pt-5 pb-5 border ma-0">
                   <v-row no-gutters justify="center" class="mt-3">
                     <v-col cols="12" class="text-center text-body-2">
-                      I Don't Have an Account?</v-col
+                      아직 가입하지 않으셨나요?</v-col
                     >
                     <v-col cols="9" class="mt-4 mb-3">
                       <v-btn
@@ -69,7 +72,7 @@
                         outlined
                         color="primary"
                         class="text-h4 text-none"
-                        >Register</v-btn
+                        >회원가입</v-btn
                       >
                     </v-col>
                   </v-row>

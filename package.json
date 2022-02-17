@@ -1,5 +1,5 @@
 {
-  "name": "whiteboard",
+  "name": "SkyCastle",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -12,7 +12,9 @@
     "axios": "^0.24.0",
     "core-js": "^3.6.5",
     "register-service-worker": "^1.7.1",
+    "twilio": "^3.73.0",
     "vue": "^2.6.11",
+    "vue-faq-accordion": "^1.6.2",
     "vue-router": "^3.2.0",
     "vuetify": "^2.4.0",
     "vuex": "^3.4.0"
@@ -34,7 +36,8 @@
     "sass-loader": "^10.0.0",
     "vue-cli-plugin-vuetify": "~2.4.5",
     "vue-template-compiler": "^2.6.11",
-    "vuetify-loader": "^1.7.0"
+    "vuetify-loader": "^1.7.0",
+    "twilio": "^3.73.0"
   },
   "eslintConfig": {
     "root": true,

@@ -13,7 +13,7 @@
                 'text-large': $vuetify.breakpoint.mdAndUp,
               }"
             >
-              IVY 출신 최상위 유학 과외만 제공합니다
+              {{data.main_description}}
             </h1>
             <p
               class="mb-10"
@@ -23,7 +23,7 @@
                 'text-h3': $vuetify.breakpoint.mdAndUp,
               }"
             >
-              What are you waiting for?
+              {{data.secondary_description}}
             </p>
             <v-btn
               rounded
@@ -37,7 +37,7 @@
                 'text-h5': $vuetify.breakpoint.mdAndUp,
               }"
               outlined
-              >Get Started</v-btn
+              >가입하기!</v-btn
             >
           </v-col>
           <v-col cols="12" class="center-horizontal mt-5"
@@ -49,7 +49,7 @@
       </v-container>
     </v-container>
 
-    <!--Join Now Section-->
+<!--    Join Now Section-->
     <v-container
       id="success-section"
       class="new-container"
@@ -201,90 +201,92 @@
     </v-container>
 
     <!--Accesible Section-->
-    <v-container
-      class="new-container"
-      :class="{
-        'mb-0': $vuetify.breakpoint.smAndDown,
-        'mt-0': $vuetify.breakpoint.smAndDown,
-        'pb-5': $vuetify.breakpoint.mdAndUp,
-        'pt-5': $vuetify.breakpoint.mdAndUp,
-      }"
-    >
-      <v-row
-        class="mt-3 mb-3 accessible-section"
-        :class="{
-          'mb-1': $vuetify.breakpoint.smAndDown,
-          'mt-1': $vuetify.breakpoint.smAndDown,
-        }"
-      >
-        <v-col
-          :class="{
-            'col-12': $vuetify.breakpoint.smAndDown,
-            'col-6': $vuetify.breakpoint.mdAndUp,
-          }"
-        >
-          <v-row
-            class="circles-container center-horizontally"
-            :class="{
-              'ma-10': $vuetify.breakpoint.lgAndUp,
-            }"
-          >
-            <div id="circle-one-outer">
-              <div id="circle-one-inner" class="center-horizontal text-center">
-                <div class="text-h2">10000+</div>
-                <div class="text-h4">Instructors Enrolled</div>
-              </div>
-            </div>
-            <div id="circle-two-outer">
-              <div id="circle-two-inner" class="center-horizontal text-center">
-                <div class="text-h2">70+</div>
-                <div class="text-h4">Quizes</div>
-              </div>
-            </div>
-            <div id="circle-three-outer">
-              <div id="circle-three-inner" class="center-horizontal text-center">
-                <div class="text-h2">50+</div>
-                <div class="text-h4">Categories</div>
-              </div>
-            </div>
-          </v-row>
-        </v-col>
-        <v-col
-          class="center-vertical"
-          :class="{
-            'col-12': $vuetify.breakpoint.smAndDown,
-            'col-6': $vuetify.breakpoint.mdAndUp,
-            'center-horizontal': $vuetify.breakpoint.smAndDown,
-            'pa-10': $vuetify.breakpoint.smAndDown,
-            'pr-16': $vuetify.breakpoint.mdAndUp,
-          }"
-        >
-          <h2
-            class="mb-10 mt-10 font-weight-bold"
-            :class="{
-              'text-h3': $vuetify.breakpoint.smAndDown,
-              'text-center': $vuetify.breakpoint.smAndDown,
-              'text-large': $vuetify.breakpoint.mdAndUp,
-            }"
-          >
-            Join us now
-          </h2>
-          <p
-            class="text-h3 mb-5 mt-5 font-weight-light"
-            :class="{
-              'text-h4': $vuetify.breakpoint.smAndDown,
-              'text-center': $vuetify.breakpoint.smAndDown,
-            }"
-          >
-            Whatever skill level you have, we have the right course for you.
-          </p>
-        </v-col>
-      </v-row>
-    </v-container>
+<!--    <v-container-->
+<!--      class="new-container"-->
+<!--      :class="{-->
+<!--        'mb-0': $vuetify.breakpoint.smAndDown,-->
+<!--        'mt-0': $vuetify.breakpoint.smAndDown,-->
+<!--        'pb-5': $vuetify.breakpoint.mdAndUp,-->
+<!--        'pt-5': $vuetify.breakpoint.mdAndUp,-->
+<!--      }"-->
+<!--    >-->
+<!--      <v-row-->
+<!--        class="mt-3 mb-3 accessible-section"-->
+<!--        :class="{-->
+<!--          'mb-1': $vuetify.breakpoint.smAndDown,-->
+<!--          'mt-1': $vuetify.breakpoint.smAndDown,-->
+<!--        }"-->
+<!--      >-->
+<!--        <v-col-->
+<!--          :class="{-->
+<!--            'col-12': $vuetify.breakpoint.smAndDown,-->
+<!--            'col-6': $vuetify.breakpoint.mdAndUp,-->
+<!--          }"-->
+<!--        >-->
+<!--          <v-row-->
+<!--            class="circles-container center-horizontally"-->
+<!--            :class="{-->
+<!--              'ma-10': $vuetify.breakpoint.lgAndUp,-->
+<!--            }"-->
+<!--          >-->
+<!--            <div id="circle-one-outer">-->
+<!--              <div id="circle-one-inner" class="center-horizontal text-center">-->
+<!--                <div class="text-h2">10000+</div>-->
+<!--                <div class="text-h4">Instructors Enrolled</div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div id="circle-two-outer">-->
+<!--              <div id="circle-two-inner" class="center-horizontal text-center">-->
+<!--                <div class="text-h2">70+</div>-->
+<!--                <div class="text-h4">Quizes</div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div id="circle-three-outer">-->
+<!--              <div id="circle-three-inner" class="center-horizontal text-center">-->
+<!--                <div class="text-h2">50+</div>-->
+<!--                <div class="text-h4">Categories</div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </v-row>-->
+<!--        </v-col>-->
+<!--        <v-col-->
+<!--          class="center-vertical"-->
+<!--          :class="{-->
+<!--            'col-12': $vuetify.breakpoint.smAndDown,-->
+<!--            'col-6': $vuetify.breakpoint.mdAndUp,-->
+<!--            'center-horizontal': $vuetify.breakpoint.smAndDown,-->
+<!--            'pa-10': $vuetify.breakpoint.smAndDown,-->
+<!--            'pr-16': $vuetify.breakpoint.mdAndUp,-->
+<!--          }"-->
+<!--        >-->
+<!--          <h2-->
+<!--            class="mb-10 mt-10 font-weight-bold"-->
+<!--            :class="{-->
+<!--              'text-h3': $vuetify.breakpoint.smAndDown,-->
+<!--              'text-center': $vuetify.breakpoint.smAndDown,-->
+<!--              'text-large': $vuetify.breakpoint.mdAndUp,-->
+<!--            }"-->
+<!--          >-->
+<!--            Join us now-->
+<!--          </h2>-->
+<!--          <p-->
+<!--            class="text-h3 mb-5 mt-5 font-weight-light"-->
+<!--            :class="{-->
+<!--              'text-h4': $vuetify.breakpoint.smAndDown,-->
+<!--              'text-center': $vuetify.breakpoint.smAndDown,-->
+<!--            }"-->
+<!--          >-->
+<!--            Whatever skill level you have, we have the right course for you.-->
+<!--          </p>-->
+<!--        </v-col>-->
+<!--      </v-row>-->
+<!--    </v-container>-->
   </div>
 </template>
 
 <script>
+import info from '../../../info';
+
 export default {
   name: 'Home',
   methods: {
@@ -311,7 +313,12 @@ export default {
     }
   },
   computed: {},
-  data: () => ({}),
+  // data: () => ({}),
+  data() {
+    return {
+      data: info.home,
+    };
+  },
 };
 </script>
 
@@ -328,7 +335,8 @@ export default {
   background-color: rgb(245, 245, 245);
 }
 .hero-container {
-  background: url(../../assets/img-home.jpg) center center/cover no-repeat;
+  /*background: url(../../assets/img-home-2.jpg) center center/cover no-repeat;*/
+  background-color: #ffcccb;
   height: calc(100vh - 70px);
   width: 100%;
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);

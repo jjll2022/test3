@@ -13,8 +13,12 @@
               class="text-h2 font-weight-light ma-5"
             >
               <v-col cols="12" class="text-center">
-                <v-avatar height="300" width="200" tile
-                  ><h3>logo placeholder</h3></v-avatar>
+                <img class="mr-3"
+                     :src="require('../../assets/IvyEd-cornell-color.png')" height="400"/>
+<!--                <v-avatar height="300" width="200" tile-->
+<!--                  >-->
+<!-- -->
+<!--                </v-avatar>-->
               </v-col>
 
               <v-col cols="12" class="text-center"> Join Us</v-col>

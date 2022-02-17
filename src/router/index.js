@@ -24,6 +24,11 @@ const routes = [
         component: () => import('@/views/main/Register'),
       },
       {
+        path: '/faq',
+        name: 'faq',
+        component: () => import('@/views/main/Faq'),
+      },
+      {
         path: '/feed',
         name: 'feed',
         component: () => import('@/views/Learner/Feed'),
